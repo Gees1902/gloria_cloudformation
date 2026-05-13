@@ -1,0 +1,13 @@
+# CloudFFormationTemplateVersion
+# Description
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'AWS CloudFormation Template: S3 Bucket'
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 'mygloria-s3-bucket'
+      AccessControl: Private
+      VersioningConfiguration:
+        Status: Enabled

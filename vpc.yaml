@@ -24,7 +24,7 @@ Resources:
       Tags:
         - Key: Name
           Value: PublicSubnet1A
-          
+
   # App Private Subnet IN AZ 1
   AppPrivateSubnet1A:
     Type: 'AWS::EC2::Subnet'
@@ -35,6 +35,7 @@ Resources:
       Tags:
         - Key: Name
           Value: AppPrivateSubnet1A
+
   # Data Private Subnet IN AZ 1
   DataPrivateSubnet1A:
     Type: 'AWS::EC2::Subnet'
@@ -45,6 +46,7 @@ Resources:
       Tags:
         - Key: Name
           Value: DataPrivateSubnet1A
+
   # Public Subnet IN AZ 2
   PublicSubnet2B:
     Type: 'AWS::EC2::Subnet'

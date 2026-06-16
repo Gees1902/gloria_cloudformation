@@ -14,3 +14,65 @@ Resources:
       Tags:
         - Key: Name
           Value: MygloriaVPC
+# Public Subnet IN AZ 1
+  PublicSubnet1A:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref MygloriaVPC
+      CidrBlock: '172.16.1.0/24'
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: true 
+      Tags:
+        - Key: Name
+          Value: PublicSubnet1A
+# App Private Subnet IN AZ 1
+  AppPrivateSubnet1A:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcID: !Ref MygloriaVPC
+      CidrBlock: '172.16.2.0/20'
+      AvailabilityZone: !Select [0, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: AppPrivateSubnet1A
+#Data Private Subnet IN AZ 1
+  DataPrivateSubnet1A":
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcID: !Ref MygloriaVPC
+      CidrBlock: '172.16.3.0/20'
+      AvailabilityZone: !Select [0, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: DataPrivateSubnet1A
+# Public Subnet IN AZ 2
+  PublicSubnet2B:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref MygloriaVPC
+      CidrBlock: '172.16.4.0/24'
+      AvailabilityZone: !Select [1, !GetAZs '']
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: PublicSubnet2B
+# App Private Subnet IN AZ 2
+  AppPrivateSubnet2B:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcID: !Ref MygloriaVPC
+      CidrBlock: '172.16.5.0/20'
+      AvailabilityZone: !Select [1, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: AppPrivateSubnet2B
+# Data Private Subnet IN AZ 2
+  DataPrivateSubnet2B:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcID: !Ref MygloriaVPC
+      CidrBlock: '172.16.6.0/20'
+      AvailabilityZone: !Select [1, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: DataPrivateSubnet2B

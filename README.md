@@ -103,7 +103,7 @@ C:\Users\User\Documents\gloria_cloudformation\screenshots1\iam template created.
 C:\Users\User\Documents\gloria_cloudformation\screenshots1\asg created.PNG
 C:\Users\User\Documents\gloria_cloudformation\screenshots1\rds template created.PNG
 C:\Users\User\Documents\gloria_cloudformation\screenshots1\static website bucket.PNG
-C:\Users\User\Documents\gloria_cloudformation\screenshots1\Highly Secure VPC Architecture.PNG
+screenshots1/Highly Secure VPC Architecture.PNG
 
 
 

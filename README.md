@@ -4,9 +4,9 @@
 
 ## Project Overview
 
-The objective was to design and deploy a custom network architecture that supports public and private resources while following AWS networking and security best practices.
+The objective was to design and deploy a custom network architecture that supports both public and private resources while adhering to AWS networking and security best practices.
 
-This project demonstrates how to deploy a secure and scalable Virtual Private Cloud (VPC) environment in AWS using Infrastructure as Code (IaC) with AWS CloudFormation. It contains AWS CloudFormation templates used to deploy AWS infrastructure as code. 
+This project demonstrates how to deploy a secure and scalable Virtual Private Cloud (VPC) environment in AWS using Infrastructure as Code (IaC) with AWS CloudFormation. It contains AWS CloudFormation templates for deploying AWS infrastructure as code. 
 
 
 ## Architecture Components
@@ -42,7 +42,7 @@ Security Groups for controlled network access
 
 * `vpc.yaml` - Created the VPC
 * `ec2.yaml` - Created the ec2 instances
-* `iam.yaml` - Created users permission
+* `iam.yaml` - Created users' permission
 * `s3-bucket.yaml` - Creates an S3 bucket
 * `igw.yaml` - Created an Internet Gateway
 * `route-table.yaml` - Creates Route Tables
